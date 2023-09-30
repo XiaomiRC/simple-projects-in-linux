@@ -1,5 +1,8 @@
 ### Create your own C program using the crypt function, and compile this into a command.
 ```
+cat MyCrypt.c
+```
+```
 #include <stdio.h> 
 #define USE_XOPEN 
 #include <unistd.h>
