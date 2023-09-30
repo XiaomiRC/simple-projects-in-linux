@@ -23,6 +23,10 @@ return 0;
 ```
 gcc MyCrypt.c -o MyCrypt -lcrypt
 ```
+[NOTE] If gcc is not installed you need to first install it.
+```
+yum install gcc -y
+```
 ### To use it, we need to give two parameters to MyCrypt. The first is the unencrypted password, the second is the salt. The salt is used to perturb the encryption algorithm in one of 4096 different ways. This variation prevents two users with the same password from having the same entry in /etc/shadow.
 ```
 ./MyCrypt hunter2 42
